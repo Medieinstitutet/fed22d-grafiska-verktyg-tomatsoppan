@@ -1,3 +1,5 @@
+About the design
+
 Färgvalsmotivering
 
 I gruppens första möte så började vi kika igenom onepagelove och bestämma vilken typ av tema vi ville ha på projektet. Ett Café för kodare blev bestämt och vi kikade lite på inspirations-sidor och hittde en grönblå färg på en av sidorna som vi alla tyckte om så den fick bli utgångspunkten.
