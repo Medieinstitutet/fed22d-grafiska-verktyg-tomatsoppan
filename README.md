@@ -15,7 +15,7 @@ Typsnitt:
 Vi har valt att hålla oss till tre olika typsnitt genom hela projektet, som alla är tillgängliga via Google fonts och som vi anser passar in med det genomgående temat för projektet (kombinationen av kaffe och programmering). En stor del av texten har typsnittet Roboto Mono, vilket vi valde då Roboto Mono är standard-typsnittet i VS code. Utöver detta har vi använt oss av typsnitten Cinzel och Yellowtail för rubriker och slogan.
 
 
-Layout
+Layout:
 
 Målsättningen var att få en överblickbar och snabbnavigerad layout. Sidan är uppdelad i "block" som antingen är staplade på varandra eller bredvid varandra. Varje block har en egen bakgrundfärg/mönster. Syftet med detta är ett varje block ska kännas unik, både vad gäller stil och innehåll.
 
