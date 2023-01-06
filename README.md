@@ -17,8 +17,10 @@ Vi har valt att hålla oss till tre olika typsnitt genom hela projektet, som all
 
 Layout:
 
+Vi har genomgående tagit hänsyn till tillgänglighet och anpassat storlek på text och knappar för att passa såväl desktop som tablet- och mobilanvändare.
+
 Målsättningen var att få en överblickbar och snabbnavigerad layout. Sidan är uppdelad i "block" som antingen är staplade på varandra eller bredvid varandra. Varje block har en egen bakgrundfärg/mönster. Syftet med detta är ett varje block ska kännas unik, både vad gäller stil och innehåll.
 
-På desktop och tablet är navigeringen högst upp på sidan och på mobile i en hamburgermeny. Navigeringen är på detta sätt genast tydlig för användaren. 
+På desktop och tablet är navigeringen högst upp på sidan och på mobil i en hamburgermeny. Navigeringen är på detta sätt genast tydlig för användaren. 
 
-Vid klick på "Sign up!" knappen så öppnas en pop-up ruta. På mobile- och tablet så täcker denna ruta hela bredden och på desktop täcker den lite mer än halva bredden. På så vis är användaren alltid kvar på sidan. 
+Vid klick på "Sign up!" knappen så öppnas en pop-up ruta. På mobil- och tablet så täcker denna ruta hela bredden och på desktop täcker den lite mer än halva bredden. På så vis är användaren alltid kvar på sidan. 
