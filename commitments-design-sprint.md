@@ -12,6 +12,6 @@ Hur meddelar ni förhinder:
 
 Via chatten I Teams.
 
-@Gabriel Yagoub
+@gabriel-yagoub
 @vera83
 @Grapensparr
