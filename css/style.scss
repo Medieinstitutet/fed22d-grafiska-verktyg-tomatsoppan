@@ -1,0 +1,38 @@
+/* 
+Fonter:
+Brödtext: font-family: 'Roboto Mono', monospace;
+Rubriker och logo: font-family: 'Cinzel', serif;
+Citat i header: font-family: 'Yellowtail', cursive; 
+Discount text: font-family: 'Permanent Marker', cursive;
+*/
+
+/* Color variables */
+$primary-color-light: #C2B89E;
+$primary-color-dark: #46433A;
+$secondary-color-light-green: #8CE1B6;
+$secondary-color-medium-green: #7BC9A1;
+$secondary-color-dark-green: #609D7E;
+$secondary-color-yellow: #F2CC43;
+
+p {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.9rem;
+}
+
+//=================================================================================================
+//-------------------------------------- @ MEDIA QUERIES ------------------------------------------
+//=================================================================================================
+
+//------------------------------------------- TABLET  ---------------------------------------------
+@media screen and (min-width: 834px) {
+    p {
+        font-size: 1rem;
+    }
+}
+
+//------------------------------------------- DESKTOP ---------------------------------------------
+@media screen and (min-width: 1440px) {
+    p {
+        font-size: 1rem;
+    }
+}
