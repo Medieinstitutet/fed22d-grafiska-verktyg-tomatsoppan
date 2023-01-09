@@ -23,21 +23,35 @@ p {
 //about us + discount
 .about-us-section {
     background-color: $secondary-color-medium-green;
+    padding-left: 16px;
+    padding-right: 15px;
 
-    .about-us-title {
-        color: #FFFFFF;
-        display: inline-block;
-        // font-family: cinzel;
-    }
+    .about-us-wrapper-left {
+        height: 50%;
 
-    .about-us-text {
-        color: #46433A;
+        .about-us-title {
+            color: #FFFFFF;
+            display: inline-block;
+            font-family: 'Cinzel';
+            font-weight: 700;
+            font-size: 1.5rem;
+            line-height: 48px;
+            text-shadow: 0 4px 4px #0000004c;
+            padding-top: 28.89px;
+        }
+
+        .about-us-text {
+            padding-top: 10px;
+            padding-bottom: 45px;
+            color: #46433A;
+            font-weight: 400;
+            line-height: 27px;
+        }
     }
 
     .about-us-wrapper-right {
         display: none;
     }
-
 }
 
 //=================================================================================================
