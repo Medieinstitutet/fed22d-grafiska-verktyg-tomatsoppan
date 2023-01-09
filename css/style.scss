@@ -19,32 +19,43 @@ p {
     font-size: 0.9rem;
 }
 
-//=================================================================================================
-//-------------------------------------- @ MEDIA QUERIES ------------------------------------------
-//=================================================================================================
 
-//green area
+//about us + discount
 .about-us-section {
     background-color: $secondary-color-medium-green;
 
     .about-us-title {
         color: #FFFFFF;
+        outline: 2px solid blue;
         // font-family: cinzel;
     }
 
-    .about-us-text {
-        outline: 2px solid red;
-    }
+    .about-us-all-wrapper {
+        display: flex;
+        flex-direction: row;
 
-    .about-us-wrapper {
-        outline: 2px solid rgb(255, 0, 242);
+        .about-us-text {
+            outline: 2px solid red;
+            // display: flex;
+            width: 50%;
+        }
 
-        .about-us-discount {
-            color: #FFFFFF;
+        .about-us-wrapper-discount {
+            outline: 2px solid rgb(255, 0, 242);
+            width: 50%;
+
+            display: inline-block;
+
+            .about-us-discount {
+                color: #FFFFFF;
+            }
         }
     }
 }
 
+//=================================================================================================
+//-------------------------------------- @ MEDIA QUERIES ------------------------------------------
+//=================================================================================================
 
 
 //------------------------------------------- TABLET  ---------------------------------------------
