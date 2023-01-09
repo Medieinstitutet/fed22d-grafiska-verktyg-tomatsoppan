@@ -23,6 +23,30 @@ p {
 //-------------------------------------- @ MEDIA QUERIES ------------------------------------------
 //=================================================================================================
 
+//green area
+.about-us-section {
+    background-color: $secondary-color-medium-green;
+
+    .about-us-title {
+        color: #FFFFFF;
+        // font-family: cinzel;
+    }
+
+    .about-us-text {
+        outline: 2px solid red;
+    }
+
+    .about-us-wrapper {
+        outline: 2px solid rgb(255, 0, 242);
+
+        .about-us-discount {
+            color: #FFFFFF;
+        }
+    }
+}
+
+
+
 //------------------------------------------- TABLET  ---------------------------------------------
 @media screen and (min-width: 834px) {
     p {
