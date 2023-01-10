@@ -336,7 +336,7 @@ header {
         display: none;
     }
 
-    //cookie-box
+    //cookie-box in tablet
     .cookie-box {
         flex-direction: row;
         gap: 66px;
@@ -368,6 +368,7 @@ header {
         font-size: 1rem;
     }
 
+    // cookies in desktop
     .cookie-box {
         .cookie-text {
             width: 650px;
