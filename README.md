@@ -26,7 +26,7 @@ På desktop och tablet är navigeringen högst upp på sidan och på mobil i en 
 Vid klick på "Sign up!" knappen så öppnas en pop-up ruta. På mobil- och tablet så täcker denna ruta hela bredden och på desktop täcker den lite mer än halva bredden. På så vis är användaren alltid kvar på sidan. 
 
 # Om appen (från utvecklarna)
-## projektstruktur (delvis klar)
+## Projektstruktur (delvis klar)
 - ./dist - (mapp med alla kompilerade filer)
 - ./src - (mapp för filer att jobba med)
   - ./src/img - (mapp för bilder)
