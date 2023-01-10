@@ -14,14 +14,150 @@ $secondary-color-medium-green: #7BC9A1;
 $secondary-color-dark-green: #609D7E;
 $secondary-color-yellow: #F2CC43;
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
 p {
     font-family: 'Roboto Mono', monospace;
     font-size: 0.9rem;
 }
 
+h1, h2, h3, h4 {
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+h1, h3, h4 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 0.75rem;
+}
+
+.business-quoat {
+    font-family: 'Yellowtail', cursive;
+    font-size: 1rem;
+    color: $secondary-color-yellow;
+    margin-top: 1.25rem;
+}
+
+.nav-link {
+    font-family: 'Cinzel', serif;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+}
+
+.zig-zag-border {
+    fill: $secondary-color-medium-green;
+}
+
+
+// Header
+header {
+    background-color: $primary-color-dark;
+    position: relative;
+
+    .logo-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .business-logo {
+            width: 6rem;
+            margin-top: 3.75rem;
+        }
+        
+        .business-name {
+            margin-top: 0.625;
+        }
+
+        .business-quoat {
+            margin: 1.25rem 0 1.875rem 0;
+        }
+    }
+    
+    nav {
+        position: fixed !important;
+        top: 0;
+        background-color: $primary-color-dark;
+        width: 100vw;
+        z-index: 3;
+
+        .container-fluid {
+            .icon-toggle {
+                height: 2.5rem;
+                width: 2.5rem;
+                border: none;
+                outline: none;
+                color: #FFFFFF;
+                font-size: 2rem;
+
+                .menu-icon {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            
+            .icon-toggle[aria-expanded=false] .icon-expanded {
+                display: none;
+            }
+            .icon-toggle[aria-expanded=true] .icon-collapsed {
+                display: none;
+            }
+        }
+
+        .navbar-collapse {
+
+            .navbar-nav {
+                height: 20rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+
+                .nav-link {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    
+    .zig-zag-border {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
 //=================================================================================================
 //-------------------------------------- @ MEDIA QUERIES ------------------------------------------
 //=================================================================================================
+
+//------------------------------------------- MOBILE  ---------------------------------------------
+// break point for nav
+@media screen and (min-width: 576px) {
+    header {
+        nav {
+            position: relative !important;
+            
+            .navbar-collapse {
+                .navbar-nav {
+                    width: 100%;
+                    height: 3rem;
+                    flex-direction: row;   
+                }
+            }
+        }
+    }
+}
 
 //------------------------------------------- TABLET  ---------------------------------------------
 @media screen and (min-width: 834px) {
