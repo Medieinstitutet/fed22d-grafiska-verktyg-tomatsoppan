@@ -24,3 +24,21 @@ Målsättningen var att få en överblickbar och snabbnavigerad layout. Sidan ä
 På desktop och tablet är navigeringen högst upp på sidan och på mobil i en hamburgermeny. Navigeringen är på detta sätt genast tydlig för användaren. 
 
 Vid klick på "Sign up!" knappen så öppnas en pop-up ruta. På mobil- och tablet så täcker denna ruta hela bredden och på desktop täcker den lite mer än halva bredden. På så vis är användaren alltid kvar på sidan. 
+
+# Om appen (från utvecklarna)
+## Installera paket
+Installera paketen i package.json med "npm install"
+- Parcel är en bundler som hjälper till att hantera utvecklarmiljön och bygga siten när den är redo för deployment. [Parceljs.org](https://parceljs.org/)
+- Gh-pages är ett paket som hjälper till att publicera till GitHub pages. [gh-pages](https://www.npmjs.com/package/gh-pages)
+
+## Utveckla, Bygg eller Publicera siten
+Script finns i package.json.
+
+#### Starta utvecklarmiljön
+Kör "npm run dev"
+
+#### Bygg siten
+Kör "npm run build" bygger siten i mappen "dist" i roten.
+
+#### Publicera till GitHub pages (ej testad)
+Kör "npm run deploy". Då byggs siten till mappen "dist" i roten. Det skapas en ny branch i repot som heter gh-pages (om den inte redan finns) samt siten publiceras på Github pages. Deploy scriptet kör även build-scriptet så det är inte nödvändigt att först köra "npm run build" vid publicering till GitHub pages.
