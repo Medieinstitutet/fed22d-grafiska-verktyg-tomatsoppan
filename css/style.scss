@@ -115,14 +115,19 @@ p {
     justify-content: center;
     padding-top: 49px;
     padding-bottom: 68px;
-    width: 390px;
+    width: 90%;
+
+    position: fixed;
+    top: 30%;
+    left: 5%;
 
     .cookie-text {
         color: $secondary-color-yellow;
         text-transform: uppercase;
-        width: 263px;
+        width: 300px;
         font-size: 1rem;
         font-weight: 700;
+        margin-bottom: 60px;
     }
 
     .cookie-wrapper {
@@ -139,6 +144,7 @@ p {
             font-weight: 700;
             height: 38px;
             width: 120px;
+            font-family: 'Roboto Mono';
         }
     }
 }
