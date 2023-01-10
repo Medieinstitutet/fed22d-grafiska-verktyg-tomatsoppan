@@ -26,13 +26,20 @@ På desktop och tablet är navigeringen högst upp på sidan och på mobil i en 
 Vid klick på "Sign up!" knappen så öppnas en pop-up ruta. På mobil- och tablet så täcker denna ruta hela bredden och på desktop täcker den lite mer än halva bredden. På så vis är användaren alltid kvar på sidan. 
 
 # Om appen (från utvecklarna)
+## projektstruktur (delvis klar)
+- ./dist - (mapp med alla kompilerade filer)
+- ./src - (mapp för filer att jobba med)
+  - ./src/img - (mapp för bilder)
+  - ./src/js - (mapp för js filer)
+  - ./src/scss - (mapp för scss filer)
+
 ## Installera paket
 Installera paketen i package.json med "npm install"
 - Parcel är en bundler som hjälper till att hantera utvecklarmiljön och bygga siten när den är redo för deployment. [Parceljs.org](https://parceljs.org/)
 - Gh-pages är ett paket som hjälper till att publicera till GitHub pages. [gh-pages](https://www.npmjs.com/package/gh-pages)
 
 ## Utveckla, Bygg eller Publicera siten
-Script finns i package.json.
+Script finns i [package.json](./package.json)
 
 #### Starta utvecklarmiljön
 Kör "npm run dev"
