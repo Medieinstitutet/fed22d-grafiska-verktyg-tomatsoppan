@@ -1,0 +1,14 @@
+p {
+    font-size: 1rem;
+}
+
+.cookie-box {
+    .cookie-text {
+        width: 650px;
+        margin-right: 5%;
+    }
+
+    .cookie-wrapper {
+        flex-direction: row;
+    }
+}

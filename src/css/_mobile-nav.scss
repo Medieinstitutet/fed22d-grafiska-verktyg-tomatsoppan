@@ -1,0 +1,17 @@
+header {
+    nav {
+        position: relative !important;
+
+        .navbar-collapse {
+            .navbar-nav {
+                width: 100%;
+                height: 3rem;
+                flex-direction: row;
+            }
+        }
+    }
+
+    .zig-zag-border {
+        z-index: 3;
+    }
+}
