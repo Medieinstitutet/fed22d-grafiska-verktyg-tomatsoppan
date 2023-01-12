@@ -30,7 +30,7 @@ Vid klick på "Sign up!" knappen så öppnas en pop-up ruta. På mobil- och tabl
 - ./dist - (mapp med alla kompilerade filer)
 - ./src - (mapp för filer att jobba med)
   - ./src/img - (mapp för bilder)
-  - ./src/js - (mapp för js filer)
+  - ./src/script - (mapp för js filer)
   - ./src/scss - (mapp för scss filer)
 
 ## Installera paket
@@ -42,10 +42,12 @@ Installera paketen i package.json med "npm install"
 Script finns i [package.json](./package.json)
 
 #### Starta utvecklarmiljön
-Kör "npm run dev"
+Kör "npm run dev". Följ adressen till localhost som kommer upp i terminalen. 
 
 #### Bygg siten
 Kör "npm run build" bygger siten i mappen "dist" i roten.
 
-#### Publicera till GitHub pages (ej testad)
+#### Publicera till GitHub pages
 Kör "npm run deploy". Då byggs siten till mappen "dist" i roten. Det skapas en ny branch i repot som heter gh-pages (om den inte redan finns) samt siten publiceras på Github pages. Deploy scriptet kör även build-scriptet så det är inte nödvändigt att först köra "npm run build" vid publicering till GitHub pages.
+
+[https://medieinstitutet.github.io/fed22d-grafiska-verktyg-tomatsoppan/](https://medieinstitutet.github.io/fed22d-grafiska-verktyg-tomatsoppan/)
