@@ -1,3 +1,5 @@
+@import 'normalize';
+
 /* 
 Fonter:
 Brödtext: font-family: 'Roboto Mono', monospace;
@@ -200,12 +202,36 @@ header {
 
 .mug-pic {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    transition-duration: 2s;
+    transition-duration: 4s;
     transition: 0.4s ease-in-out;
+    transition-property: transform;
+    animation-name: grow;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
+    //chrome, safari
     -webkit-transition-property: -webkit-transform;
     -webkit-animation-name: grow;
-    -webkit-animation-duration: 3s;
-    animation-iteration-count: infinite;
+    -webkit-animation-duration: 4s;
+
+    //mozilla firefox
+    -moz-transition-property: -moz-transform;
+    -moz-animation-name: grow;
+    -moz-animation-duration: 4s;
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 @-webkit-keyframes grow {
@@ -301,108 +327,19 @@ header {
 //=================================================================================================
 
 
+
 //------------------------------------------- TABLET  ---------------------------------------------
 
-
-//------------------------------------------- MOBILE  ---------------------------------------------
 // break point for nav
 @media screen and (min-width: 576px) {
-    header {
-        nav {
-            position: relative !important;
-
-            .navbar-collapse {
-                .navbar-nav {
-                    width: 100%;
-                    height: 3rem;
-                    flex-direction: row;
-                }
-            }
-        }
-
-        .zig-zag-border {
-            z-index: 3;
-        }
-    }
+    @import 'mobile-nav';
 }
 
 @media screen and (min-width: 834px) {
-    p {
-        font-size: 1rem;
-    }
-
-    .about-us-section {
-        display: flex;
-        flex-direction: row;
-        gap: 5rem;
-
-        .about-us-wrapper-left {
-            margin-left: 60px;
-
-            .about-us-title {
-                font-size: 3rem;
-                line-height: 54px;
-            }
-        }
-
-        .about-us-wrapper-right {
-            display: block;
-            text-align: center;
-            padding-right: 58px;
-            color: #FFFFFF;
-        }
-
-        .about-us-discount-top {
-            margin-top: 47px;
-            padding: 0;
-        }
-    }
-
-    .discount-section {
-        display: none;
-    }
-
-    //cookie-box in tablet
-    .cookie-box {
-        flex-direction: row;
-        gap: 66px;
-        padding-top: 60px;
-        padding-bottom: 70px;
-
-        .cookie-text {
-            font-size: 1.5rem;
-            margin-top: 63px;
-        }
-
-        .cookie-wrapper {
-            flex-direction: column;
-
-            .cookie-btn {
-                width: 200px;
-                height: 50px;
-            }
-        }
-    }
+    @import 'tablet';
 }
-
-
-
 
 //------------------------------------------- DESKTOP ---------------------------------------------
 @media screen and (min-width: 1440px) {
-    p {
-        font-size: 1rem;
-    }
-
-    // cookies in desktop
-    .cookie-box {
-        .cookie-text {
-            width: 650px;
-            margin-right: 5%;
-        }
-
-        .cookie-wrapper {
-            flex-direction: row;
-        }
-    }
+    @import 'desktop';
 }
