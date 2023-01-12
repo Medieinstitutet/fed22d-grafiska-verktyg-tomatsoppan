@@ -6,4 +6,4 @@ const hideCookieBoxFn = ()=>cookieBox.classList.add("hidden");
 const hideCookies = (btn)=>btn.addEventListener("click", hideCookieBoxFn);
 cookieBtns.forEach(hideCookies);
 
-//# sourceMappingURL=index.44983732.js.map
+//# sourceMappingURL=index.d4a8b14f.js.map
