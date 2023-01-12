@@ -321,14 +321,15 @@ header .zig-zag-border {
 
 .mug-pic {
   filter: drop-shadow(0 4px 4px #00000040);
-  transition: all .4s ease-in-out;
+  transition: transform .4s ease-in-out;
   -webkit-transition-property: -webkit-transform;
-  -webkit-animation-name: grow;
-  -webkit-animation-duration: 3s;
+  -moz-transition-property: -moz-transform;
+  animation-name: grow;
+  animation-duration: 4s;
   animation-iteration-count: infinite;
 }
 
-@-webkit-keyframes grow {
+@keyframes grow {
   0% {
     transform: scale(1);
   }
