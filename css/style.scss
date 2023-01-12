@@ -222,6 +222,32 @@ header {
     }
 }
 
+//popular drinks
+.drinks-section {
+    background-image: url("/assets/graphic resources/coffee-pattern-background.png");
+    background-color: rgba(247, 246, 243, 0.5);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0px 15px 15px 20px;
+}
+
+.drinks-section-title {
+    color: $primary-color-dark;
+    text-transform: uppercase;
+    font-family: 'Cinzel';
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 48px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-top: 28.89px;
+}
+
+.drinks-name {
+    margin-left: 25px;
+    font-weight: bold;
+}
+
 //cookies
 .cookie-box {
     background-color: $primary-color-dark;
