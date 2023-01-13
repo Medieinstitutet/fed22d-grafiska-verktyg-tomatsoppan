@@ -74,6 +74,7 @@ header {
         }
 
         .business-name {
+            margin: 0;
             margin-top: 0.625rem;
         }
 
@@ -90,7 +91,7 @@ header {
         position: fixed !important;
         top: 0;
         background-color: $primary-color-dark;
-        width: 100vw;
+        width: 100%;
         z-index: 2;
 
         .container-fluid {
@@ -336,16 +337,18 @@ header {
 
 //------------------------------------------- TABLET  ---------------------------------------------
 
-// break point for nav
+// break point for nav (tablet and up?)
 @media screen and (min-width: 576px) {
     @import 'mobile-nav';
 }
 
+// break point for nav (desktop and up?)
 @media screen and (min-width: 834px) {
     @import 'tablet';
 }
 
 //------------------------------------------- DESKTOP ---------------------------------------------
+//(skip this one? and move its content to query above)
 @media screen and (min-width: 1440px) {
     @import 'desktop';
 }

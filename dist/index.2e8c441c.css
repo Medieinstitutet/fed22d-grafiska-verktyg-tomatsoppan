@@ -202,7 +202,7 @@ header .logo-section .business-logo {
 }
 
 header .logo-section .business-name {
-  margin-top: .625rem;
+  margin: .625rem 0 0;
 }
 
 header .logo-section .business-quoat {
@@ -213,7 +213,7 @@ header .logo-section .business-quoat {
 }
 
 header nav {
-  width: 100vw;
+  width: 100%;
   z-index: 2;
   background-color: #46433a;
   top: 0;
@@ -416,14 +416,46 @@ header .zig-zag-border {
 }
 
 @media screen and (min-width: 576px) {
+  header .logo-section .business-logo {
+    width: 6.875rem;
+  }
+
+  header .logo-section .business-name {
+    margin-top: 1.25rem;
+    font-size: 4.688rem;
+  }
+
+  header .logo-section .business-info {
+    font-size: 1.25rem;
+  }
+
+  header .logo-section .business-quoat {
+    margin: 2.188rem 0 4.375rem;
+    font-size: 2.5rem;
+  }
+
   header nav {
     position: relative !important;
   }
 
-  header nav .navbar-collapse .navbar-nav {
+  header nav .container-fluid {
+    margin-bottom: 2.5rem;
+    padding: 0;
+  }
+
+  header nav .container-fluid .navbar-collapse {
+    width: 100% !important;
+  }
+
+  header nav .container-fluid .navbar-collapse .navbar-nav {
     width: 100%;
     height: 3rem;
     flex-direction: row;
+  }
+
+  header nav .container-fluid .navbar-collapse .navbar-nav .nav-link {
+    width: 14.125rem;
+    font-size: 1.25rem;
   }
 
   header .zig-zag-border {
@@ -434,6 +466,29 @@ header .zig-zag-border {
 @media screen and (min-width: 834px) {
   p {
     font-size: 1rem;
+  }
+
+  header .logo-section .business-logo {
+    width: 11.25rem;
+  }
+
+  header .logo-section .business-name {
+    margin-top: 1.625rem;
+    font-size: 6rem;
+  }
+
+  header .logo-section .business-info {
+    font-size: 1.5rem;
+  }
+
+  header .logo-section .business-quoat {
+    margin: 2.5rem 0 6.25rem;
+    font-size: 3rem;
+  }
+
+  header nav .container-fluid .navbar-collapse .navbar-nav .nav-link {
+    width: 22rem;
+    font-size: 2rem;
   }
 
   .about-us-section {

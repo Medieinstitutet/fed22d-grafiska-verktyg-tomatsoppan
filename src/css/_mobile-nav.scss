@@ -1,16 +1,44 @@
 header {
-    nav {
+	.logo-section {
+        .business-logo {
+            width: 6.875rem;
+		}
+        
+		.business-name {
+			font-size: 4.688rem;
+			margin-top: 1.25rem;
+		}
+        
+		.business-info {
+            font-size: 1.25rem;
+		}
+
+		.business-quoat {
+			margin: 2.188rem 0 4.375rem 0;
+			font-size: 2.5rem;
+		}
+	}
+    
+	nav {
         position: relative !important;
-
-        .navbar-collapse {
-            .navbar-nav {
-                width: 100%;
-                height: 3rem;
-                flex-direction: row;
-            }
-        }
-    }
-
+		.container-fluid {
+            padding: 0;
+            margin-bottom: 2.5rem;
+            .navbar-collapse {
+                width: 100% !important;
+				.navbar-nav {
+                    width: 100%;
+                    height: 3rem;
+                    flex-direction: row;
+					.nav-link {
+                        width: 14.125rem;
+                        font-size: 1.25rem;
+					}
+				}
+			}
+		}
+	}
+    
     .zig-zag-border {
         z-index: 3;
     }
