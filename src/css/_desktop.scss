@@ -38,54 +38,54 @@ header {
 	}
 }
 
-.about-us-section {
-    display: flex;
-    flex-direction: row;
-    gap: 5rem;
+// .about-us-section {
+//     display: flex;
+//     flex-direction: row;
+//     gap: 5rem;
 
-    .about-us-wrapper-left {
-        margin-left: 60px;
+//     .about-us-wrapper-left {
+//         margin-left: 60px;
 
-        .about-us-title {
-            font-size: 3rem;
-            line-height: 54px;
-        }
-    }
+//         .about-us-title {
+//             font-size: 3rem;
+//             line-height: 54px;
+//         }
+//     }
 
-    .about-us-wrapper-right {
-        display: block;
-        text-align: center;
-        padding-right: 58px;
-        color: #FFFFFF;
-    }
+//     .about-us-wrapper-right {
+//         display: block;
+//         text-align: center;
+//         padding-right: 58px;
+//         color: #FFFFFF;
+//     }
 
-    .about-us-discount-top {
-        margin-top: 47px;
-        padding: 0;
-    }
-}
+//     .about-us-discount-top {
+//         margin-top: 47px;
+//         padding: 0;
+//     }
+// }
 
-.discount-section {
-    display: none;
-}
+// .discount-section {
+//     display: none;
+// }
 
-.cookie-box {
-    flex-direction: row;
-    gap: 66px;
-    padding-top: 60px;
-    padding-bottom: 70px;
+// .cookie-box {
+//     flex-direction: row;
+//     gap: 66px;
+//     padding-top: 60px;
+//     padding-bottom: 70px;
 
-    .cookie-text {
-        font-size: 1.5rem;
-        margin-top: 63px;
-    }
+//     .cookie-text {
+//         font-size: 1.5rem;
+//         margin-top: 63px;
+//     }
 
-    .cookie-wrapper {
-        flex-direction: column;
+//     .cookie-wrapper {
+//         flex-direction: column;
 
-        .cookie-btn {
-            width: 200px;
-            height: 50px;
-        }
-    }
-}
+//         .cookie-btn {
+//             width: 200px;
+//             height: 50px;
+//         }
+//     }
+// }
