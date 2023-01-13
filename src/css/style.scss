@@ -333,22 +333,17 @@ header {
 //-------------------------------------- @ MEDIA QUERIES ------------------------------------------
 //=================================================================================================
 
-
-
 //------------------------------------------- TABLET  ---------------------------------------------
-
-// break point for nav (tablet and up?)
 @media screen and (min-width: 576px) {
-    @import 'mobile-nav';
-}
-
-// break point for nav (desktop and up?)
-@media screen and (min-width: 834px) {
     @import 'tablet';
 }
 
 //------------------------------------------- DESKTOP ---------------------------------------------
-//(skip this one? and move its content to query above)
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 834px) {
     @import 'desktop';
+}
+
+//------------------------------------------- DESKTOP LARGE ---------------------------------------
+@media screen and (min-width: 1440px) {
+    @import 'desktop-lg';
 }

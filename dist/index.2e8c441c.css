@@ -545,10 +545,6 @@ header .zig-zag-border {
 }
 
 @media screen and (min-width: 1440px) {
-  p {
-    font-size: 1rem;
-  }
-
   .cookie-box .cookie-text {
     width: 650px;
     margin-right: 5%;
