@@ -2,6 +2,42 @@ p {
     font-size: 1rem;
 }
 
+// header
+header {
+	.logo-section {
+        .business-logo {
+            width: 11.25rem;
+		}
+        
+		.business-name {
+			font-size: 6rem;
+			margin-top: 1.625rem;
+		}
+        
+		.business-info {
+            font-size: 1.5rem;
+		}
+
+		.business-quoat {
+			margin: 2.5rem 0 6.25rem 0;
+			font-size: 3rem;
+		}
+	}
+    
+	nav {
+		.container-fluid {
+            .navbar-collapse {
+				.navbar-nav {
+					.nav-link {
+                        width: 22rem;
+                        font-size: 2rem;
+					}
+				}
+			}
+		}
+	}
+}
+
 .about-us-section {
     display: flex;
     flex-direction: row;
