@@ -461,35 +461,6 @@ header .zig-zag-border {
   header .zig-zag-border {
     z-index: 3;
   }
-}
-
-@media screen and (min-width: 834px) {
-  p {
-    font-size: 1rem;
-  }
-
-  header .logo-section .business-logo {
-    width: 11.25rem;
-  }
-
-  header .logo-section .business-name {
-    margin-top: 1.625rem;
-    font-size: 6rem;
-  }
-
-  header .logo-section .business-info {
-    font-size: 1.5rem;
-  }
-
-  header .logo-section .business-quoat {
-    margin: 2.5rem 0 6.25rem;
-    font-size: 3rem;
-  }
-
-  header nav .container-fluid .navbar-collapse .navbar-nav .nav-link {
-    width: 22rem;
-    font-size: 2rem;
-  }
 
   .about-us-section {
     flex-direction: row;
@@ -544,11 +515,36 @@ header .zig-zag-border {
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 834px) {
   p {
     font-size: 1rem;
   }
 
+  header .logo-section .business-logo {
+    width: 11.25rem;
+  }
+
+  header .logo-section .business-name {
+    margin-top: 1.625rem;
+    font-size: 6rem;
+  }
+
+  header .logo-section .business-info {
+    font-size: 1.5rem;
+  }
+
+  header .logo-section .business-quoat {
+    margin: 2.5rem 0 6.25rem;
+    font-size: 3rem;
+  }
+
+  header nav .container-fluid .navbar-collapse .navbar-nav .nav-link {
+    width: 22rem;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
   .cookie-box .cookie-text {
     width: 650px;
     margin-right: 5%;
