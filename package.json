@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "About the design",
   "scripts": {
-    "dev": "parcel src/index.html",
+    "dev": "rm -rf dev/ && parcel src/index.html --dist-dir dev",
     "build": "rm -rf dist/ && parcel build src/index.html --public-url ./",
     "deploy": "rm -rf dist/ && npm run build && gh-pages -d dist"
   },
