@@ -75,6 +75,30 @@ header {
 	display: none;
 }
 
+footer {
+	height: 261px;
+	font-size: 1rem;
+	.icons{
+		padding-top: 40px;
+    .fa-facebook-f, .fa-instagram, .fa-twitter{
+        padding-right: 30px;
+        padding-left: 30px;
+        font-size: 3.8rem;
+    }
+    }
+	.footer-info{
+		margin-top: 30px;
+	}
+	.footer-text{
+        float: left;
+    }
+    .opening-hours{
+        float: right;
+		margin-top: 18.5px;
+		margin-right: 8%;
+    }
+}
+
 .cookie-box {
 	flex-direction: row;
 	gap: 66px;
