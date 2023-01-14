@@ -205,7 +205,7 @@ header .logo-section .business-name {
   margin: .625rem 0 0;
 }
 
-header .logo-section .business-quoat {
+header .logo-section .business-quote {
   color: #f2cc43;
   margin: 1.25rem 0 1.875rem;
   font-family: Yellowtail, cursive;
@@ -217,7 +217,6 @@ header nav {
   z-index: 2;
   background-color: #46433a;
   top: 0;
-  position: fixed !important;
 }
 
 header nav .container-fluid .icon-toggle {
@@ -445,6 +444,11 @@ footer .icons .fa-facebook-f, footer .icons .fa-instagram, footer .icons .fa-twi
 }
 
 @media screen and (min-width: 576px) {
+  header {
+    flex-direction: column;
+    display: flex;
+  }
+
   header .logo-section .business-logo {
     width: 6.875rem;
   }
@@ -458,13 +462,13 @@ footer .icons .fa-facebook-f, footer .icons .fa-instagram, footer .icons .fa-twi
     font-size: 1.25rem;
   }
 
-  header .logo-section .business-quoat {
+  header .logo-section .business-quote {
     margin: 2.188rem 0 4.375rem;
     font-size: 2.5rem;
   }
 
   header nav {
-    position: relative !important;
+    order: 2;
   }
 
   header nav .container-fluid {
@@ -562,7 +566,7 @@ footer .icons .fa-facebook-f, footer .icons .fa-instagram, footer .icons .fa-twi
     font-size: 1.5rem;
   }
 
-  header .logo-section .business-quoat {
+  header .logo-section .business-quote {
     margin: 2.5rem 0 6.25rem;
     font-size: 3rem;
   }

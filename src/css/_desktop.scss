@@ -4,88 +4,36 @@ p {
 
 // header
 header {
-	.logo-section {
+    .logo-section {
         .business-logo {
             width: 11.25rem;
-		}
-        
-		.business-name {
-			font-size: 6rem;
-			margin-top: 1.625rem;
-		}
-        
-		.business-info {
-            font-size: 1.5rem;
-		}
+        }
 
-		.business-quoat {
-			margin: 2.5rem 0 6.25rem 0;
-			font-size: 3rem;
-		}
-	}
-    
-	nav {
-		.container-fluid {
+        .business-name {
+            font-size: 6rem;
+            margin-top: 1.625rem;
+        }
+
+        .business-info {
+            font-size: 1.5rem;
+        }
+
+        .business-quote {
+            margin: 2.5rem 0 6.25rem 0;
+            font-size: 3rem;
+        }
+    }
+
+    nav {
+        .container-fluid {
             .navbar-collapse {
-				.navbar-nav {
-					.nav-link {
+                .navbar-nav {
+                    .nav-link {
                         width: 22rem;
                         font-size: 2rem;
-					}
-				}
-			}
-		}
-	}
+                    }
+                }
+            }
+        }
+    }
 }
-
-// .about-us-section {
-//     display: flex;
-//     flex-direction: row;
-//     gap: 5rem;
-
-//     .about-us-wrapper-left {
-//         margin-left: 60px;
-
-//         .about-us-title {
-//             font-size: 3rem;
-//             line-height: 54px;
-//         }
-//     }
-
-//     .about-us-wrapper-right {
-//         display: block;
-//         text-align: center;
-//         padding-right: 58px;
-//         color: #FFFFFF;
-//     }
-
-//     .about-us-discount-top {
-//         margin-top: 47px;
-//         padding: 0;
-//     }
-// }
-
-// .discount-section {
-//     display: none;
-// }
-
-// .cookie-box {
-//     flex-direction: row;
-//     gap: 66px;
-//     padding-top: 60px;
-//     padding-bottom: 70px;
-
-//     .cookie-text {
-//         font-size: 1.5rem;
-//         margin-top: 63px;
-//     }
-
-//     .cookie-wrapper {
-//         flex-direction: column;
-
-//         .cookie-btn {
-//             width: 200px;
-//             height: 50px;
-//         }
-//     }
-// }
