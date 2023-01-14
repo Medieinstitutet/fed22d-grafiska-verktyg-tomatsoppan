@@ -370,6 +370,11 @@ header .zig-zag-border {
   font-weight: bold;
 }
 
+footer {
+  color: #fff;
+  background-color: #46433a;
+}
+
 .cookie-box {
   width: 90%;
   background-color: #46433a;
