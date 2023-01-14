@@ -375,6 +375,17 @@ footer {
   background-color: #46433a;
 }
 
+footer .icons {
+  color: #f2cc43;
+  text-align: center;
+  padding-top: 20px;
+}
+
+footer .icons .fa-facebook-f, footer .icons .fa-instagram, footer .icons .fa-twitter {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .cookie-box {
   width: 90%;
   background-color: #46433a;
