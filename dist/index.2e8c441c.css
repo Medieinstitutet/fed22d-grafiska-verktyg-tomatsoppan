@@ -372,18 +372,31 @@ header .zig-zag-border {
 
 footer {
   color: #fff;
+  height: 269px;
   background-color: #46433a;
+}
+
+footer .footer-text {
+  margin-top: 20px;
+  margin-left: 8%;
+  font-size: .8125rem;
+  line-height: 27.48px;
+}
+
+footer .opening-hours {
+  margin-top: -5px;
 }
 
 footer .icons {
   color: #f2cc43;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 25px;
 }
 
 footer .icons .fa-facebook-f, footer .icons .fa-instagram, footer .icons .fa-twitter {
   padding-left: 20px;
   padding-right: 20px;
+  font-size: 1.6rem;
 }
 
 .cookie-box {
