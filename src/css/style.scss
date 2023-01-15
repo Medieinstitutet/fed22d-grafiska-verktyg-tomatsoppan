@@ -56,6 +56,10 @@ h2 {
     fill: $secondary-color-medium-green;
 }
 
+.zig-zag-border-footer {
+    fill: $primary-color-dark;
+}
+
 // Header
 header {
     background-color: $primary-color-dark;
@@ -252,6 +256,9 @@ header {
     }
 }
 
+//slideshow
+
+
 //popular drinks
 .drinks-section {
     background-image: url("../img/coffee-pattern-background.png");
@@ -308,7 +315,16 @@ footer {
             font-size: 1.6rem;
         }
     }
+    
+    .zig-zag-border-footer{
+        top: -292px;
+        position: relative;
+        bottom: 0;
+        fill: $primary-color-dark;
+    }
 }
+
+
 
 //cookies
 .cookie-box {
