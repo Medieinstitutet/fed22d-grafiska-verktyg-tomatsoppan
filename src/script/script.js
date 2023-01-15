@@ -89,7 +89,7 @@ header.append(svg('viewBox="0 -6 390 12"'))
 // create zig zag pattern
 const svgFooter = viewbox => {
     const string = `
-    <svg version="1.1" id="zigzag" class="zig-zag-border-footer" xmlns="http://www.w3.org/2000/svg"
+    <svg version="1.1" id="zigzagfooter" class="zig-zag-border-footer" xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" ${viewbox}
         style="enable-background:new 0 0 390 12;" xml:space="preserve">
         <g>
@@ -153,7 +153,7 @@ const svgFooter = viewbox => {
     const doc = parser.parseFromString(string, "text/html")
 
     // extract zigzag from new dom object
-    const html = doc.getElementById("zigzag")
+    const html = doc.getElementById("zigzagfooter")
     
     return html
 }
