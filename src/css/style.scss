@@ -318,11 +318,9 @@ footer {
     }
     
     .zig-zag-border{
-        // top: -292px;
-        position: relative;
-        // bottom: -6;
-        top: -60px;
-        // fill: $primary-color-dark;
+        position: absolute;
+        transform: translateY(-98%);
+        fill: $primary-color-dark;
     }
 }
 
