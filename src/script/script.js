@@ -3,10 +3,11 @@
 //cookie btns
 const cookieBtns = document.querySelectorAll('.cookie-btn');
 const cookieBox = document.querySelector('.cookie-box');
+
 //bg for popups
 const bgPopup = document.querySelector('.bg-popup');
 
-//close cookie box when either btn is clicked on
+//close cookie box and remove bg (for popups) when either btn is clicked on
 const hideCookieBoxFn = () => {
   cookieBox.classList.add('hidden');
   bgPopup.classList.add('hidden');
