@@ -163,6 +163,7 @@ const footer = document.getElementById("footer")
 // Append zig zag pattern and adjust viewbox with the svg function
 footer.append(svgFooter('viewBox="0 -6 390 12"'))
 
+
 //slideshow
 const buttons = document.querySelectorAll("[data-carousel-button]")
 
