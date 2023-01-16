@@ -1,9 +1,17 @@
+// const { doc } = require('prettier');
+
 //cookie btns
 const cookieBtns = document.querySelectorAll('.cookie-btn');
 const cookieBox = document.querySelector('.cookie-box');
 
-//close cookie box when either btn is clicked on
-const hideCookieBoxFn = () => cookieBox.classList.add('hidden');
+//bg for popups
+const bgPopup = document.querySelector('.bg-popup');
+
+//close cookie box and remove bg (for popups) when either btn is clicked on
+const hideCookieBoxFn = () => {
+  cookieBox.classList.add('hidden');
+  bgPopup.classList.add('hidden');
+};
 const hideCookies = (btn) => btn.addEventListener('click', hideCookieBoxFn);
 
 cookieBtns.forEach(hideCookies);
