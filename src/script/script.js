@@ -78,13 +78,19 @@ const svg = viewbox => {
     // extract zigzag from new dom object
     const html = doc.getElementById("zigzag")
     
+    // return svg element
     return html
 }
 
 // get header element
 const header = document.getElementById("header")
-// Append zig zag pattern and adjust viewbox with the svg function
+// Append zig zag pattern and set viewbox with the svg function
 header.append(svg('viewBox="0 -6 390 12"'))
+
+// get footer element
+const footer = document.getElementById("footer")
+// Prepend zig zag pattern and set viewbox with the svg function
+footer.prepend(svg('viewBox="0 -6 390 12"'))
 
 //slideshow
 const buttons = document.querySelectorAll("[data-carousel-button]")

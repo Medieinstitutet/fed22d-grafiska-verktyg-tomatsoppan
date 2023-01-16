@@ -343,6 +343,7 @@ header {
 
 //footer
 footer {
+    position: relative;
     background-color: #46433a;
     color: white;
     height: 269px;
@@ -370,6 +371,12 @@ footer {
             padding-left: 20px;
             font-size: 1.6rem;
         }
+    }
+    
+    .zig-zag-border{
+        position: absolute;
+        transform: translateY(-98%);
+        fill: $primary-color-dark;
     }
 }
 
