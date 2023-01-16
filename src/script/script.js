@@ -1,17 +1,16 @@
 //cookie btns
-const cookieBtns = document.querySelectorAll('.cookie-btn')
-const cookieBox = document.querySelector('.cookie-box')
+const cookieBtns = document.querySelectorAll('.cookie-btn');
+const cookieBox = document.querySelector('.cookie-box');
 
 //close cookie box when either btn is clicked on
-const hideCookieBoxFn = () => cookieBox.classList.add('hidden')
-const hideCookies = btn => btn.addEventListener('click', hideCookieBoxFn)
+const hideCookieBoxFn = () => cookieBox.classList.add('hidden');
+const hideCookies = (btn) => btn.addEventListener('click', hideCookieBoxFn);
 
-cookieBtns.forEach(hideCookies)
-
+cookieBtns.forEach(hideCookies);
 
 // create zig zag pattern
-const svg = viewbox => {
-    const string = `
+const svg = (viewbox) => {
+  const string = `
     <svg version="1.1" id="zigzag" class="zig-zag-border" xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" ${viewbox}
         style="enable-background:new 0 0 390 12;" xml:space="preserve">
@@ -69,46 +68,44 @@ const svg = viewbox => {
                 <path class="st0" d="M297,1.1l4.5,5l-4.5,5l-4.5-5L297,1.1z" />
             </g>
         </g>
-    </svg>`
+    </svg>`;
 
-    // create a new dom object
-    const parser = new DOMParser()
-    const doc = parser.parseFromString(string, "text/html")
+  // create a new dom object
+  const parser = new DOMParser();
+  const doc = parser.parseFromString(string, 'text/html');
 
-    // extract zigzag from new dom object
-    const html = doc.getElementById("zigzag")
-    
-    // return svg element
-    return html
-}
+  // extract zigzag from new dom object
+  const html = doc.getElementById('zigzag');
+
+  // return svg element
+  return html;
+};
 
 // get header element
-const header = document.getElementById("header")
+const header = document.getElementById('header');
 // Append zig zag pattern and set viewbox with the svg function
-header.append(svg('viewBox="0 -6 390 12"'))
+header.append(svg('viewBox="0 -6 390 12"'));
 
 // get footer element
-const footer = document.getElementById("footer")
+const footer = document.getElementById('footer');
 // Prepend zig zag pattern and set viewbox with the svg function
-footer.prepend(svg('viewBox="0 -6 390 12"'))
+footer.prepend(svg('viewBox="0 -6 390 12"'));
 
 //slideshow
-const buttons = document.querySelectorAll("[data-carousel-button]")
+const buttons = document.querySelectorAll('[data-carousel-button]');
 
-buttons.forEach(button => {
-  button.addEventListener("click", () => {
-    const offset = button.dataset.carouselButton === "next" ? 1 : -1
-    const slides = button
-      .closest("[data-carousel]")
-      .querySelector("[data-slides]")
+buttons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const offset = button.dataset.carouselButton === 'next' ? 1 : -1;
+    const slides = button.closest('[data-carousel]').querySelector('[data-slides]');
 
-    const activeSlide = slides.querySelector("[data-active]")
-    let newIndex = [...slides.children].indexOf(activeSlide) + offset
-    if (newIndex < 0) newIndex = slides.children.length - 1
-    if (newIndex >= slides.children.length) newIndex = 0
+    const activeSlide = slides.querySelector('[data-active]');
+    let newIndex = [...slides.children].indexOf(activeSlide) + offset;
+    if (newIndex < 0) newIndex = slides.children.length - 1;
+    if (newIndex >= slides.children.length) newIndex = 0;
 
     //puts active class on the correct slide image
-    slides.children[newIndex].dataset.active = true
-    delete activeSlide.dataset.active
-  })
-})
+    slides.children[newIndex].dataset.active = true;
+    delete activeSlide.dataset.active;
+  });
+});
