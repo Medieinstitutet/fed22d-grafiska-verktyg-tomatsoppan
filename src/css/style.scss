@@ -287,6 +287,7 @@ header {
 
 //footer
 footer {
+    position: relative;
     background-color: #46433a;
     color: white;
     height: 269px;
@@ -316,11 +317,12 @@ footer {
         }
     }
     
-    .zig-zag-border-footer{
-        top: -292px;
+    .zig-zag-border{
+        // top: -292px;
         position: relative;
-        bottom: 0;
-        fill: $primary-color-dark;
+        // bottom: -6;
+        top: -60px;
+        // fill: $primary-color-dark;
     }
 }
 
