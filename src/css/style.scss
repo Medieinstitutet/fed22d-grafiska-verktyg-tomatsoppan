@@ -389,8 +389,6 @@ footer {
     }
 }
 
-
-
 //cookies
 .cookie-box {
     background-color: $primary-color-dark;
@@ -401,9 +399,8 @@ footer {
     padding-top: 49px;
     padding-bottom: 68px;
     width: 90%;
-
     position: fixed;
-    top: 30%;
+    top: 35%;
     left: 5%;
 
     .cookie-text {
@@ -437,6 +434,17 @@ footer {
 //hidden class for pop-ups?
 .hidden {
     display: none;
+}
+
+//bg for popups
+.bg-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
 }
 
 //=================================================================================================
