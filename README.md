@@ -27,11 +27,17 @@ Vid klick på "Sign up!" knappen så öppnas en pop-up ruta. På mobil- och tabl
 ## Projektstruktur
 
 ├── assets (grafik från designteam)
+
 ├── src (mapp för filer att jobba med)
+
 │ ├── img
+
 │ ├── script
+
 │ ├── scss
+
 ├── dev (mapp med kompilerade filer för dev.)
+
 ├── dist (mapp med kompilerade filer för prod.)
 
 ## Installera paket
