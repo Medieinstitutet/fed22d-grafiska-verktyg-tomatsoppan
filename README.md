@@ -1,6 +1,5 @@
 About the design
 
-
 Färgvalsmotivering:
 
 I gruppens första möte så började vi kika igenom onepagelove och bestämma vilken typ av tema vi ville ha på projektet. Ett Café för kodare blev bestämt och vi kikade lite på inspirations-sidor och hittde en grönblå färg på en av sidorna som vi alla tyckte om så den fick bli utgångspunkten.
@@ -9,11 +8,9 @@ Vi ville ha en grundpalett som kändes kaffe-betonad och kikade på lite inspira
 
 Den lysande gröna färgen kändes som en fin match på det bruna för att använda till knappar och ev länkar. Ytterligare en senapsgul färg lades till för att vara med på några få element som ett komplement till den gröna färgen ifall vi ville.
 
-
 Typsnitt:
 
 Vi har valt att hålla oss till tre olika typsnitt genom hela projektet, som alla är tillgängliga via Google fonts och som vi anser passar in med det genomgående temat för projektet (kombinationen av kaffe och programmering). En stor del av texten har typsnittet Roboto Mono, vilket vi valde då Roboto Mono är standard-typsnittet i VS code. Utöver detta har vi använt oss av typsnitten Cinzel och Yellowtail för rubriker och slogan.
-
 
 Layout:
 
@@ -21,33 +18,49 @@ Vi har genomgående tagit hänsyn till tillgänglighet och anpassat storlek på 
 
 Målsättningen var att få en överblickbar och snabbnavigerad layout. Sidan är uppdelad i "block" som antingen är staplade på varandra eller bredvid varandra. Varje block har en egen bakgrundfärg/mönster. Syftet med detta är ett varje block ska kännas unik, både vad gäller stil och innehåll.
 
-På desktop och tablet är navigeringen högst upp på sidan och på mobil i en hamburgermeny. Navigeringen är på detta sätt genast tydlig för användaren. 
+På desktop och tablet är navigeringen högst upp på sidan och på mobil i en hamburgermeny. Navigeringen är på detta sätt genast tydlig för användaren.
 
-Vid klick på "Sign up!" knappen så öppnas en pop-up ruta. På mobil- och tablet så täcker denna ruta hela bredden och på desktop täcker den lite mer än halva bredden. På så vis är användaren alltid kvar på sidan. 
+Vid klick på "Sign up!" knappen så öppnas en pop-up ruta. På mobil- och tablet så täcker denna ruta hela bredden och på desktop täcker den lite mer än halva bredden. På så vis är användaren alltid kvar på sidan.
 
 # Om appen (från utvecklarna)
-## Projektstruktur (delvis klar)
-- ./dist - (mapp med alla kompilerade filer)
-- ./src - (mapp för filer att jobba med)
-  - ./src/img - (mapp för bilder)
-  - ./src/script - (mapp för js filer)
-  - ./src/scss - (mapp för scss filer)
+
+## Projektstruktur
+
+├── assets (grafik från designteam)
+├── src (mapp för filer att jobba med)
+│ ├── img
+│ ├── script
+│ ├── scss
+├── dev (mapp med kompilerade filer för dev.)
+├── dist (mapp med kompilerade filer för prod.)
 
 ## Installera paket
-Installera paketen i package.json med "npm install"
+
+Installera paketen i [package.json](./package.json) med "npm install"
+
 - Parcel är en bundler som hjälper till att hantera utvecklarmiljön och bygga siten när den är redo för deployment. [Parceljs.org](https://parceljs.org/)
 - Gh-pages är ett paket som hjälper till att publicera till GitHub pages. [gh-pages](https://www.npmjs.com/package/gh-pages)
+- SASS hjälper till att kompilera SCSS till CSS. [Sass-lang.com](https://sass-lang.com/)
+- Prettier hjälper till att formatera koden enhetligt. [Prettier.io](https://prettier.io/)
 
 ## Utveckla, Bygg eller Publicera siten
+
 Script finns i [package.json](./package.json)
 
 #### Starta utvecklarmiljön
-Kör "npm run dev". Följ adressen till localhost som kommer upp i terminalen. 
+
+Kör "npm run dev". Följ adressen till localhost som kommer upp i terminalen.
 
 #### Bygg siten
+
 Kör "npm run build" bygger siten i mappen "dist" i roten.
 
+#### Formatera med Prettier
+
+Kör "npm run format" för att formatera koden i projektets filer.
+
 #### Publicera till GitHub pages
+
 Kör "npm run deploy". Då byggs siten till mappen "dist" i roten. Det skapas en ny branch i repot som heter gh-pages (om den inte redan finns) samt siten publiceras på Github pages. Deploy scriptet kör även build-scriptet så det är inte nödvändigt att först köra "npm run build" vid publicering till GitHub pages.
 
 [https://medieinstitutet.github.io/fed22d-grafiska-verktyg-tomatsoppan/](https://medieinstitutet.github.io/fed22d-grafiska-verktyg-tomatsoppan/)
