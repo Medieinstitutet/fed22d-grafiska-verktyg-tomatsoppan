@@ -198,6 +198,7 @@ header {
 }
 
 .about-us-discount-bottom {
+    margin: 0;
     padding-top: 36px;
     padding-bottom: 33px;
     font-size: 1.5rem;
@@ -339,6 +340,57 @@ header {
     font-size: 0.875rem;
     margin-left: 25px;
     font-weight: bold;
+}
+
+//upcoming events
+.events-section {
+    background-color: $primary-color-light;
+    padding: 0px 15px 15px 20px;
+}
+
+.events-section-title {
+    color: white;
+    font-family: "Cinzel";
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 48px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-top: 28.89px;
+    padding-bottom: 15px;
+}
+
+.events-name {
+    color: white;
+    font-size: 0.875rem;
+    margin-bottom: 25px;
+}
+
+.events-time {
+    color: black;
+    font-weight: bold;
+}
+
+.sign-up-btn-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.sign-up-button {
+    background-color: $secondary-color-light-green;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 15px 7px 15px;
+    margin-bottom: 20px;
+}
+
+.sign-up-button:hover {
+    background-color: $secondary-color-medium-green;
+}
+
+.sign-up-button:active {
+    background-color: $secondary-color-dark-green;
 }
 
 //footer
