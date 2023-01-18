@@ -43,13 +43,27 @@ header {
     flex-direction: row;
 }
 
-.drinks-section, .events-section, .events-popup {
+.drinks-section,
+.events-section,
+.events-popup {
     width: 50vw;
 }
 
 .sign-up-btn-wrapper {
     justify-content: end;
-}    
+}
+
+//about us
+.about-us-section {
+
+    .about-us-wrapper-left {
+        width: 50%;
+    }
+
+    .about-us-wrapper-right {
+        width: 50%;
+    }
+}
 
 //slideshow
 .carousel {
@@ -57,18 +71,20 @@ header {
 }
 
 //footer
-footer{
+footer {
     height: 342px;
-    .footer-info{
+
+    .footer-info {
         padding-top: 130px;
     }
-    .icons{
-      text-align: center;
-      position: absolute;
-      margin-top: 130px;
-      left:0;
-      right:0;
-      margin-left:auto;
-      margin-right:auto; 
+
+    .icons {
+        text-align: center;
+        position: absolute;
+        margin-top: 130px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
