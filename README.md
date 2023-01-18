@@ -44,10 +44,10 @@ Vid klick på "Sign up!" knappen så öppnas en pop-up ruta. På mobil- och tabl
 
 Installera paketen i [package.json](./package.json) med "npm install"
 
-- Parcel är en bundler som hjälper till att hantera utvecklarmiljön och bygga siten när den är redo för deployment. <a href="https://parceljs.org/" target="_blank">Parceljs.org</a>
-- Gh-pages är ett paket som hjälper till att publicera till GitHub pages. <a href="https://www.npmjs.com/package/gh-pages" target="_blank">gh-pages</a>
-- SASS hjälper till att kompilera SCSS till CSS. <a href="https://sass-lang.com/" target="_blank">Sass-lang.com</a>
-- Prettier hjälper till att formatera koden enhetligt. <a href="https://prettier.io/" target="_blank">Prettier.io</a>
+- Parcel är en bundler som hjälper till att hantera utvecklarmiljön och bygga siten när den är redo för deployment. <a href="https://parceljs.org/" target="_blank" rel="noreferrer noopener">Parceljs.org</a>
+- Gh-pages är ett paket som hjälper till att publicera till GitHub pages. <a href="https://www.npmjs.com/package/gh-pages" target="_blank" rel="noreferrer noopener">gh-pages</a>
+- SASS hjälper till att kompilera SCSS till CSS. <a href="https://sass-lang.com/" target="_blank" rel="noreferrer noopener">Sass-lang.com</a>
+- Prettier hjälper till att formatera koden enhetligt. <a href="https://prettier.io/" target="_blank" rel="noreferrer noopener">Prettier.io</a>
 
 ## Utveckla, Bygg eller Publicera siten
 
@@ -69,4 +69,4 @@ Kör "npm run format" för att formatera koden i projektets filer.
 
 Kör "npm run deploy". Då byggs siten till mappen "dist" i roten. Det skapas en ny branch i repot som heter gh-pages (om den inte redan finns) samt siten publiceras på Github pages. Deploy scriptet kör även build-scriptet så det är inte nödvändigt att först köra "npm run build" vid publicering till GitHub pages.
 
-<a href="https://medieinstitutet.github.io/fed22d-grafiska-verktyg-tomatsoppan/" target="_blank">Visit Code Bean website</a>
+<a href="https://medieinstitutet.github.io/fed22d-grafiska-verktyg-tomatsoppan/" target="_blank" rel="noreferrer noopener">Visit Code Bean website</a>
