@@ -173,6 +173,7 @@ header {
             color: #46433a;
             font-weight: 400;
             line-height: 27px;
+
         }
     }
 
@@ -431,7 +432,7 @@ header {
 }
 
 //X-symbol in event popup
-.material-symbols-outlined { 
+.material-symbols-outlined {
     color: white;
     background-color: $primary-color-light;
     font-size: 2rem;
@@ -450,7 +451,7 @@ header {
     justify-content: center;
 }
 
-.sign-up-popup-button{
+.sign-up-popup-button {
     background-color: $secondary-color-light-green;
     color: white;
     font-weight: bold;
@@ -482,7 +483,7 @@ header {
     align-items: center;
     gap: 15px;
 }
-  
+
 //footer
 footer {
     position: relative;
