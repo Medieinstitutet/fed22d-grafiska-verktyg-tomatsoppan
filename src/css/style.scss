@@ -407,6 +407,7 @@ header {
     background-color: $primary-color-light;
     padding: 0px 15px 15px 20px;
     position: relative;
+    z-index: 20;
 }
 
 .events-popup-title {
@@ -572,7 +573,7 @@ footer {
 }
 
 //bg for popups
-.bg-popup {
+.bg-popup, .bg-events-popup {
     position: fixed;
     top: 0;
     left: 0;

@@ -21,6 +21,7 @@ const eventsSection = document.querySelector('.events-section')
 const eventsPopUp = document.querySelector('.events-popup')
 const signUpBtn = document.querySelector('.sign-up-button')
 const closeEventsPopUp = document.querySelector('.close-events-popup')
+const bgEventsPopup = document.querySelector('.bg-events-popup');
 
 //open event popup when sign up btn is clicked
 signUpBtn.addEventListener("click", openSignUp);
@@ -28,6 +29,7 @@ signUpBtn.addEventListener("click", openSignUp);
 function openSignUp() {
     eventsSection.classList.add("hidden");
     eventsPopUp.classList.remove("hidden");
+    bgEventsPopup.classList.remove("hidden");
 }
 
 //close event popup when X-symbol is clicked
@@ -36,6 +38,7 @@ closeEventsPopUp.addEventListener("click", closeSignUp);
 function closeSignUp() {
     eventsSection.classList.remove("hidden");
     eventsPopUp.classList.add("hidden");
+    bgEventsPopup.classList.add("hidden");
 }
 
 // create zig zag pattern
