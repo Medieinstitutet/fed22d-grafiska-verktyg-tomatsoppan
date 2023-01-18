@@ -65,33 +65,11 @@ header {
   background-color: $primary-color-dark;
   position: relative;
 
-  .logo-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-shadow: $text-shadow-header;
-
-    .business-logo {
-      width: 6rem;
-      margin-top: 3.75rem;
-    }
-
-    .business-name {
-      margin: 0;
-      margin-top: 0.625rem;
-    }
-
-    .business-quote {
-      margin: 1.25rem 0 1.875rem 0;
-      font-family: 'Yellowtail', cursive;
-      font-size: 1rem;
-      color: $secondary-color-yellow;
-      margin-top: 1.25rem;
-    }
-  }
-
   nav {
+    position: fixed !important;
     top: 0;
+    right: 0;
+    left: 0;
     background-color: $primary-color-dark;
     width: 100%;
     z-index: 2;
@@ -137,6 +115,31 @@ header {
           text-shadow: $text-shadow-header;
         }
       }
+    }
+  }
+
+  .logo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-shadow: $text-shadow-header;
+
+    .business-logo {
+      width: 6rem;
+      margin-top: 3.75rem;
+    }
+
+    .business-name {
+      margin: 0;
+      margin-top: 0.625rem;
+    }
+
+    .business-quote {
+      margin: 1.25rem 0 1.875rem 0;
+      font-family: 'Yellowtail', cursive;
+      font-size: 1rem;
+      color: $secondary-color-yellow;
+      margin-top: 1.25rem;
     }
   }
 
