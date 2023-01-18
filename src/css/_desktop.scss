@@ -1,90 +1,93 @@
 p {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 // header
 header {
-    .logo-section {
-        .business-logo {
-            width: 11.25rem;
-        }
-
-        .business-name {
-            font-size: 6rem;
-            margin-top: 1.625rem;
-        }
-
-        .business-info {
-            font-size: 1.5rem;
-        }
-
-        .business-quote {
-            margin: 2.5rem 0 6.25rem 0;
-            font-size: 3rem;
-        }
+  .logo-section {
+    .business-logo {
+      width: 11.25rem;
     }
 
-    nav {
-        .container-fluid {
-            .navbar-collapse {
-                .navbar-nav {
-                    .nav-link {
-                        width: 22rem;
-                        font-size: 2rem;
-                    }
-                }
-            }
-        }
+    .business-name {
+      font-size: 6rem;
+      margin-top: 1.625rem;
     }
+
+    .business-info {
+      font-size: 1.5rem;
+    }
+
+    .business-quote {
+      margin: 2.5rem 0 6.25rem 0;
+      font-size: 3rem;
+    }
+  }
+
+  nav {
+    .container-fluid {
+      .navbar-collapse {
+        .navbar-nav {
+          .nav-link {
+            width: 22rem;
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
 }
 
 .drinks-events-wrapper {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .drinks-section,
 .events-section,
 .events-popup {
-    width: 50vw;
+  width: 50vw;
 }
 
 .sign-up-btn-wrapper {
-    justify-content: end;
+  justify-content: end;
 }
 
 //about us
 .about-us-section {
+  .about-us-wrapper-left {
+    width: 50%;
+  }
 
-    .about-us-wrapper-left {
-        width: 50%;
-    }
-
-    .about-us-wrapper-right {
-        width: 50%;
-    }
+  .about-us-wrapper-right {
+    width: 50%;
+  }
 }
 
 //slideshow
 .carousel {
-    height: 650px;
+  height: 650px;
 }
 
 //footer
 footer {
-    height: 342px;
+  height: 342px;
 
-    .footer-info {
-        padding-top: 130px;
-    }
+  .footer-info {
+    padding-top: 130px;
+  }
 
-    .icons {
-        text-align: center;
-        position: absolute;
-        margin-top: 130px;
-        left: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  .icons {
+    text-align: center;
+    position: absolute;
+    margin-top: 130px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .zig-zag-border {
+    transform: translateY(-96%);
+  }
 }
