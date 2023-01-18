@@ -44,10 +44,10 @@ Vid klick på "Sign up!" knappen så öppnas en pop-up ruta. På mobil- och tabl
 
 Installera paketen i [package.json](./package.json) med "npm install"
 
-- Parcel är en bundler som hjälper till att hantera utvecklarmiljön och bygga siten när den är redo för deployment. [Parceljs.org](https://parceljs.org/)
-- Gh-pages är ett paket som hjälper till att publicera till GitHub pages. [gh-pages](https://www.npmjs.com/package/gh-pages)
-- SASS hjälper till att kompilera SCSS till CSS. [Sass-lang.com](https://sass-lang.com/)
-- Prettier hjälper till att formatera koden enhetligt. [Prettier.io](https://prettier.io/)
+- Parcel är en bundler som hjälper till att hantera utvecklarmiljön och bygga siten när den är redo för deployment. <a href="https://parceljs.org/" target="_blank">Parceljs.org</a>
+- Gh-pages är ett paket som hjälper till att publicera till GitHub pages. <a href="https://www.npmjs.com/package/gh-pages" target="_blank">gh-pages</a>
+- SASS hjälper till att kompilera SCSS till CSS. <a href="https://sass-lang.com/" target="_blank">Sass-lang.com</a>
+- Prettier hjälper till att formatera koden enhetligt. <a href="https://prettier.io/" target="_blank">Prettier.io</a>
 
 ## Utveckla, Bygg eller Publicera siten
 
@@ -69,4 +69,4 @@ Kör "npm run format" för att formatera koden i projektets filer.
 
 Kör "npm run deploy". Då byggs siten till mappen "dist" i roten. Det skapas en ny branch i repot som heter gh-pages (om den inte redan finns) samt siten publiceras på Github pages. Deploy scriptet kör även build-scriptet så det är inte nödvändigt att först köra "npm run build" vid publicering till GitHub pages.
 
-[https://medieinstitutet.github.io/fed22d-grafiska-verktyg-tomatsoppan/](https://medieinstitutet.github.io/fed22d-grafiska-verktyg-tomatsoppan/)
+<a href="https://medieinstitutet.github.io/fed22d-grafiska-verktyg-tomatsoppan/" target="_blank">Visit Code Bean website</a>
