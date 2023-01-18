@@ -260,19 +260,22 @@ header {
 //slideshow
 .carousel {
     width: 100vw;
-    height: 100vh;
+    height: 300px;
     position: relative;
+
     ul {
         margin: 0;
         padding: 0;
         list-style: none;
     }
+
     .slide {
         position: absolute;
         inset: 0;
         opacity: 0;
         transition: 200ms opacity ease-in-out;
         transition-delay: 200ms;
+
         img {
             display: block;
             width: 100%;
@@ -281,11 +284,13 @@ header {
             object-position: center;
         }
     }
+
     .slide[data-active] {
         opacity: 1;
         z-index: 1;
         transition-delay: 0ms;
     }
+
     .carousel-button {
         position: absolute;
         z-index: 2;
@@ -300,17 +305,21 @@ header {
         padding: 0 .5rem;
         background-color: rgba(0, 0, 0, .1);
     }
+
     .carousel-button:hover,
     .carousel-button:focus {
         color: white;
         background-color: rgba(0, 0, 0, .2);
     }
+
     .carousel-button:focus {
         outline: 1px solid black;
     }
+
     .carousel-button.prev {
         left: 1rem;
     }
+
     .carousel-button.next {
         right: 1rem;
     }
@@ -476,6 +485,7 @@ header {
   
 //footer
 footer {
+    position: relative;
     background-color: #46433a;
     color: white;
     height: 269px;
@@ -505,15 +515,12 @@ footer {
         }
     }
 
-    .zig-zag-border-footer{
-        top: -292px;
-        position: relative;
-        bottom: 0;
+    .zig-zag-border {
+        position: absolute;
+        transform: translateY(-98%);
         fill: $primary-color-dark;
     }
 }
-
-
 
 //cookies
 .cookie-box {
@@ -525,10 +532,10 @@ footer {
     padding-top: 49px;
     padding-bottom: 68px;
     width: 90%;
-
     position: fixed;
-    top: 30%;
+    top: 35%;
     left: 5%;
+    z-index: 20;
 
     .cookie-text {
         color: $secondary-color-yellow;
@@ -561,6 +568,18 @@ footer {
 //hidden class for pop-ups?
 .hidden {
     display: none;
+}
+
+//bg for popups
+.bg-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+    z-index: 10;
 }
 
 //=================================================================================================
