@@ -38,6 +38,19 @@ header {
     }
 }
 
+.drinks-events-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.drinks-section, .events-section, .events-popup {
+    width: 50vw;
+}
+
+.sign-up-btn-wrapper {
+    justify-content: end;
+}    
+
 //slideshow
 .carousel {
     height: 650px;
