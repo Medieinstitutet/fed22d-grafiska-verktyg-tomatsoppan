@@ -7,39 +7,40 @@ const cookieBox = document.querySelector('.cookie-box');
 //bg for popups
 const bgPopup = document.querySelector('.bg-popup');
 
+//select event section elements
+const eventsSection = document.querySelector('.events-section');
+const eventsPopUp = document.querySelector('.events-popup');
+const signUpBtn = document.querySelector('.sign-up-button');
+const closeEventsPopUp = document.querySelector('.close-events-popup');
+const bgEventsPopup = document.querySelector('.bg-events-popup');
+
 //close cookie box and remove bg (for popups) when either btn is clicked on
-const hideCookieBoxFn = () => {
+function hideCookieBoxFn() {
   cookieBox.classList.add('hidden');
   bgPopup.classList.add('hidden');
-};
-const hideCookies = (btn) => btn.addEventListener('click', hideCookieBoxFn);
+}
+function hideCookies(btn) {
+  btn.addEventListener('click', hideCookieBoxFn);
+}
+
+function openSignUp() {
+  eventsSection.classList.add('hidden');
+  eventsPopUp.classList.remove('hidden');
+  bgEventsPopup.classList.remove('hidden');
+}
+function closeSignUp() {
+  eventsSection.classList.remove('hidden');
+  eventsPopUp.classList.add('hidden');
+  bgEventsPopup.classList.add('hidden');
+}
 
 cookieBtns.forEach(hideCookies);
 
-//select event section elements
-const eventsSection = document.querySelector('.events-section')
-const eventsPopUp = document.querySelector('.events-popup')
-const signUpBtn = document.querySelector('.sign-up-button')
-const closeEventsPopUp = document.querySelector('.close-events-popup')
-const bgEventsPopup = document.querySelector('.bg-events-popup');
-
 //open event popup when sign up btn is clicked
-signUpBtn.addEventListener("click", openSignUp);
-
-function openSignUp() {
-    eventsSection.classList.add("hidden");
-    eventsPopUp.classList.remove("hidden");
-    bgEventsPopup.classList.remove("hidden");
-}
+signUpBtn.addEventListener('click', openSignUp);
 
 //close event popup when X-symbol is clicked
-closeEventsPopUp.addEventListener("click", closeSignUp);
-
-function closeSignUp() {
-    eventsSection.classList.remove("hidden");
-    eventsPopUp.classList.add("hidden");
-    bgEventsPopup.classList.add("hidden");
-}
+closeEventsPopUp.addEventListener('click', closeSignUp);
 
 // create zig zag pattern
 const svg = (viewbox) => {
