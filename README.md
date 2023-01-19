@@ -70,3 +70,26 @@ Kör "npm run format" för att formatera koden i projektets filer.
 Kör "npm run deploy". Då byggs siten till mappen "dist" i roten. Det skapas en ny branch i repot som heter gh-pages (om den inte redan finns) samt siten publiceras på Github pages. Deploy scriptet kör även build-scriptet så det är inte nödvändigt att först köra "npm run build" vid publicering till GitHub pages.
 
 [https://medieinstitutet.github.io/fed22d-grafiska-verktyg-tomatsoppan/](https://medieinstitutet.github.io/fed22d-grafiska-verktyg-tomatsoppan/)
+
+## Bilder på slutresultatet 📷
+#### Desktop-vy:
+![desktop](https://user-images.githubusercontent.com/95537845/213437101-b250e80f-3a8d-42f6-ad20-3d993d9aed0d.png)
+
+#### Cookie pop-up:
+![cookie-popup](https://user-images.githubusercontent.com/95537845/213437153-92fe08e1-720b-47eb-a02c-28f5dec79c0c.png)
+
+#### Event pop-up:
+![event-popup](https://user-images.githubusercontent.com/95537845/213437202-a8dc9990-0db5-4157-a188-5733660d0f95.png)
+
+☞ Vill du se bild på mobil-vy? [Klicka här](https://user-images.githubusercontent.com/95537845/213438738-99bff800-7929-49f7-86b2-fd7d204fc122.png)
+
+☞ Vill du se bild på tablet-vy? [Klicka här](https://user-images.githubusercontent.com/95537845/213438765-b97994be-d8ab-473a-81de-b93add7b86f4.png)     
+  
+
+## Vi som utvecklat sidan 💻
+- [@etrigo](https://github.com/etrigo) 
+- [@nanidam](https://github.com/nanidam) 
+- [@julia-lundbergish](https://github.com/julia-lundbergish) 
+- [@zandrastr](https://github.com/zandrastr) 
+
+
