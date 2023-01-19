@@ -1,45 +1,14 @@
-// const { doc } = require('prettier');
-
-//cookie btns
 const cookieBtns = document.querySelectorAll('.cookie-btn');
-const cookieBox = document.querySelector('.cookie-box');
-
-//bg for popups
 const bgPopup = document.querySelector('.bg-popup');
-
-//close cookie box and remove bg (for popups) when either btn is clicked on
-const hideCookieBoxFn = () => {
-  cookieBox.classList.add('hidden');
-  bgPopup.classList.add('hidden');
-};
-const hideCookies = (btn) => btn.addEventListener('click', hideCookieBoxFn);
-
-cookieBtns.forEach(hideCookies);
-
-//select event section elements
-const eventsSection = document.querySelector('.events-section')
-const eventsPopUp = document.querySelector('.events-popup')
-const signUpBtn = document.querySelector('.sign-up-button')
-const closeEventsPopUp = document.querySelector('.close-events-popup')
+const cookieBox = document.querySelector('.cookie-box');
+const eventsSection = document.querySelector('.events-section');
+const eventsPopUp = document.querySelector('.events-popup');
+const signUpBtn = document.querySelector('.sign-up-button');
+const closeEventsPopUp = document.querySelector('.close-events-popup');
 const bgEventsPopup = document.querySelector('.bg-events-popup');
-
-//open event popup when sign up btn is clicked
-signUpBtn.addEventListener("click", openSignUp);
-
-function openSignUp() {
-    eventsSection.classList.add("hidden");
-    eventsPopUp.classList.remove("hidden");
-    bgEventsPopup.classList.remove("hidden");
-}
-
-//close event popup when X-symbol is clicked
-closeEventsPopUp.addEventListener("click", closeSignUp);
-
-function closeSignUp() {
-    eventsSection.classList.remove("hidden");
-    eventsPopUp.classList.add("hidden");
-    bgEventsPopup.classList.add("hidden");
-}
+const header = document.getElementById('header');
+const footer = document.getElementById('footer');
+const buttons = document.querySelectorAll('[data-carousel-button]'); //slideshowBtns
 
 // create zig zag pattern
 const svg = (viewbox) => {
@@ -114,31 +83,49 @@ const svg = (viewbox) => {
   return html;
 };
 
-// get header element
-const header = document.getElementById('header');
-// Append zig zag pattern and set viewbox with the svg function
-header.append(svg('viewBox="0 -6 390 12"'));
+//close cookie box and remove bg (for popups) when either btn is clicked on
+function hideCookieBoxFn() {
+  cookieBox.classList.add('hidden');
+  bgPopup.classList.add('hidden');
+}
 
-// get footer element
-const footer = document.getElementById('footer');
-// Prepend zig zag pattern and set viewbox with the svg function
-footer.prepend(svg('viewBox="0 -6 390 12"'));
+function hideCookies(btn) {
+  btn.addEventListener('click', hideCookieBoxFn);
+}
 
-//slideshow
-const buttons = document.querySelectorAll('[data-carousel-button]');
+//slideshow fn
+function slideshowBtns(button) {
+  button.addEventListener('click', changeSlide);
+}
 
-buttons.forEach((button) => {
-  button.addEventListener('click', () => {
-    const offset = button.dataset.carouselButton === 'next' ? 1 : -1;
-    const slides = button.closest('[data-carousel]').querySelector('[data-slides]');
+function changeSlide() {
+  const offset = this.dataset.carouselButton === 'next' ? 1 : -1;
+  const slides = this.closest('[data-carousel]').querySelector('[data-slides]');
 
-    const activeSlide = slides.querySelector('[data-active]');
-    let newIndex = [...slides.children].indexOf(activeSlide) + offset;
-    if (newIndex < 0) newIndex = slides.children.length - 1;
-    if (newIndex >= slides.children.length) newIndex = 0;
+  const activeSlide = slides.querySelector('[data-active]');
+  let newIndex = [...slides.children].indexOf(activeSlide) + offset;
+  if (newIndex < 0) newIndex = slides.children.length - 1;
+  if (newIndex >= slides.children.length) newIndex = 0;
 
-    //puts active class on the correct slide image
-    slides.children[newIndex].dataset.active = true;
-    delete activeSlide.dataset.active;
-  });
-});
+  //puts active class on the correct slide image
+  slides.children[newIndex].dataset.active = true;
+  delete activeSlide.dataset.active;
+}
+
+function openSignUp() {
+  eventsSection.classList.add('hidden');
+  eventsPopUp.classList.remove('hidden');
+  bgEventsPopup.classList.remove('hidden');
+}
+function closeSignUp() {
+  eventsSection.classList.remove('hidden');
+  eventsPopUp.classList.add('hidden');
+  bgEventsPopup.classList.add('hidden');
+}
+
+header.append(svg('viewBox="0 -6 390 12"')); // Append zig zag pattern and set viewbox with the svg function
+cookieBtns.forEach(hideCookies);
+signUpBtn.addEventListener('click', openSignUp);
+closeEventsPopUp.addEventListener('click', closeSignUp);
+buttons.forEach(slideshowBtns);
+footer.prepend(svg('viewBox="0 -6 390 12"')); // Prepend zig zag pattern and set viewbox with the svg function
