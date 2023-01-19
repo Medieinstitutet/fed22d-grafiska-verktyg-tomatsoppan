@@ -86,7 +86,14 @@ Kör "npm run deploy". Då byggs siten till mappen "dist" i roten. Det skapas en
 ☞ Vill du se bild på tablet-vy? [Klicka här](https://user-images.githubusercontent.com/95537845/213438765-b97994be-d8ab-473a-81de-b93add7b86f4.png)     
   
 
-## Vi som utvecklat sidan 💻
+## Vi som designat och utvecklat sidan 
+
+#### Design 🎨 
+- [@gabriel-yagoub](https://github.com/gabriel-yagoub) 
+- [@vera83](https://github.com/vera83) 
+- [@Grapensparr](https://github.com/Grapensparr) 
+
+#### Kod 💻
 - [@etrigo](https://github.com/etrigo) 
 - [@nanidam](https://github.com/nanidam) 
 - [@julia-lundbergish](https://github.com/julia-lundbergish) 
