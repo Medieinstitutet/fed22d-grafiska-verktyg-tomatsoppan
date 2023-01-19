@@ -83,8 +83,14 @@ Kör "npm run deploy". Då byggs siten till mappen "dist" i roten. Det skapas en
 
 ☞ Vill du se bild på mobil-vy? [Klicka här](https://user-images.githubusercontent.com/95537845/213438738-99bff800-7929-49f7-86b2-fd7d204fc122.png)
 
-☞ Vill du se bild på tablet-vy? [Klicka här](https://user-images.githubusercontent.com/95537845/213438765-b97994be-d8ab-473a-81de-b93add7b86f4.png)     
-  
+☞ Vill du se bild på tablet-vy? [Klicka här](https://user-images.githubusercontent.com/95537845/213438765-b97994be-d8ab-473a-81de-b93add7b86f4.png)  
+
+#### Tech 
+![JS](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![SCSS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+![Prettier](https://img.shields.io/badge/prettier-1A2C34?style=for-the-badge&logo=prettier&logoColor=F7BA3E)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 
 ## Vi som designat och utvecklat sidan 
 
