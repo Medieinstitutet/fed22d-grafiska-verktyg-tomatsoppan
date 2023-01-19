@@ -1,10 +1,6 @@
-// const { doc } = require('prettier');
-
-//cookie btns
 const cookieBtns = document.querySelectorAll('.cookie-btn');
 const cookieBox = document.querySelector('.cookie-box');
 
-//bg for popups
 const bgPopup = document.querySelector('.bg-popup');
 
 //select event section elements
@@ -13,6 +9,11 @@ const eventsPopUp = document.querySelector('.events-popup');
 const signUpBtn = document.querySelector('.sign-up-button');
 const closeEventsPopUp = document.querySelector('.close-events-popup');
 const bgEventsPopup = document.querySelector('.bg-events-popup');
+
+const header = document.getElementById('header');
+const footer = document.getElementById('footer');
+//slideshow
+const buttons = document.querySelectorAll('[data-carousel-button]');
 
 //close cookie box and remove bg (for popups) when either btn is clicked on
 function hideCookieBoxFn() {
@@ -114,19 +115,12 @@ const svg = (viewbox) => {
   // return svg element
   return html;
 };
-
-// get header element
-const header = document.getElementById('header');
 // Append zig zag pattern and set viewbox with the svg function
+
 header.append(svg('viewBox="0 -6 390 12"'));
 
-// get footer element
-const footer = document.getElementById('footer');
 // Prepend zig zag pattern and set viewbox with the svg function
 footer.prepend(svg('viewBox="0 -6 390 12"'));
-
-//slideshow
-const buttons = document.querySelectorAll('[data-carousel-button]');
 
 buttons.forEach((button) => {
   button.addEventListener('click', () => {
